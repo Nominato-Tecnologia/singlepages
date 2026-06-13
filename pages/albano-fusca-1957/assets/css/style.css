@@ -1,0 +1,388 @@
+.vehicle-page {
+  background:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.22), transparent 32rem),
+    radial-gradient(circle at bottom right, rgba(220, 38, 38, 0.18), transparent 28rem),
+    linear-gradient(145deg, #111827 0%, #1f2937 45%, #030712 100%);
+  color: #f9fafb;
+}
+
+.vehicle-shell {
+  display: grid;
+  gap: 18px;
+}
+
+.vehicle-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 32px);
+  display: flex;
+  align-items: flex-end;
+  padding: 28px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(17, 24, 39, 0.18) 0%, rgba(17, 24, 39, 0.74) 48%, rgba(3, 7, 18, 0.96) 100%),
+    radial-gradient(circle at 72% 18%, rgba(251, 191, 36, 0.26), transparent 16rem),
+    linear-gradient(135deg, #374151 0%, #111827 56%, #030712 100%);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
+}
+
+.vehicle-hero::before {
+  content: "1957";
+  position: absolute;
+  top: 10px;
+  right: -18px;
+  color: rgba(255, 255, 255, 0.055);
+  font-size: clamp(5rem, 24vw, 13rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  pointer-events: none;
+}
+
+.vehicle-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -12% -20% -12%;
+  height: 220px;
+  background:
+    radial-gradient(ellipse at center, rgba(245, 158, 11, 0.32), transparent 55%),
+    radial-gradient(ellipse at center, rgba(255, 255, 255, 0.08), transparent 65%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.vehicle-hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.vehicle-page .eyebrow {
+  background: rgba(251, 191, 36, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.28);
+}
+
+.vehicle-page h1 {
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-size: clamp(4rem, 22vw, 9rem);
+  text-transform: uppercase;
+  text-shadow: 0 18px 36px rgba(0, 0, 0, 0.38);
+}
+
+.vehicle-subtitle {
+  max-width: 760px;
+  color: #e5e7eb;
+  font-size: clamp(1.2rem, 5vw, 2rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.vehicle-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.vehicle-highlight span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f9fafb;
+  font-size: 0.9rem;
+  font-weight: 700;
+  backdrop-filter: blur(10px);
+}
+
+.vehicle-price-box {
+  max-width: 420px;
+  margin-top: 18px;
+  background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 100%);
+  color: #422006;
+  border: 1px solid rgba(251, 191, 36, 0.46);
+  box-shadow: 0 22px 40px rgba(245, 158, 11, 0.24);
+}
+
+.vehicle-price-box small {
+  color: #78350f;
+}
+
+.vehicle-price-box strong {
+  color: #422006;
+}
+
+.vehicle-page .card {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.96);
+  color: #111827;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.22);
+}
+
+.vehicle-page .card h2 {
+  color: #111827;
+}
+
+.vehicle-page .card p {
+  color: #4b5563;
+}
+
+.section-kicker {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: #b45309;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vehicle-story p + p,
+.vehicle-callout p + p {
+  margin-top: 14px;
+}
+
+.vehicle-feature-list {
+  margin-top: 22px;
+}
+
+.vehicle-page .feature-item {
+  background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+}
+
+.feature-icon {
+  display: inline-flex;
+  flex: 0 0 42px;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: #fffbeb;
+  font-size: 1.35rem;
+}
+
+.feature-item strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #111827;
+  font-size: 1.03rem;
+}
+
+.feature-item p {
+  font-size: 0.94rem;
+}
+
+.vehicle-callout {
+  position: relative;
+  overflow: hidden;
+}
+
+.vehicle-callout::after {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.14);
+}
+
+.vehicle-quote {
+  position: relative;
+  margin-top: 22px;
+  padding: 22px;
+  border-left: 5px solid #f59e0b;
+  border-radius: 0 18px 18px 0;
+  background: #fffbeb;
+  color: #78350f;
+  font-size: clamp(1.2rem, 5vw, 1.8rem);
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.contact-card {
+  text-align: center;
+}
+
+.contact-info {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 22px auto 0;
+  padding: 16px 20px;
+  border-radius: 20px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.contact-info span {
+  color: #6b7280;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-info strong {
+  color: #111827;
+  font-size: clamp(1.4rem, 7vw, 2.2rem);
+  line-height: 1;
+}
+
+.vehicle-page .btn-whatsapp {
+  color: #052e16;
+}
+
+.vehicle-page .btn-primary {
+  background: #111827;
+  box-shadow: 0 12px 24px rgba(17, 24, 39, 0.24);
+}
+
+.vehicle-page .btn-primary:hover,
+.vehicle-page .btn-primary:focus-visible {
+  background: #030712;
+}
+
+.vehicle-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 4px 8px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.vehicle-footer a {
+  color: #fbbf24;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.vehicle-footer a:hover,
+.vehicle-footer a:focus-visible {
+  text-decoration: underline;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 56px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: #25d366;
+  color: #052e16;
+  font-size: 0.98rem;
+  font-weight: 900;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 18px 36px rgba(37, 211, 102, 0.34), 0 10px 24px rgba(0, 0, 0, 0.26);
+  opacity: 0;
+  transform: translateY(18px) scale(0.96);
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease, background-color 180ms ease;
+}
+
+.floating-whatsapp.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.floating-whatsapp:hover,
+.floating-whatsapp:focus-visible {
+  background: #1ebe5d;
+  transform: translateY(-2px) scale(1);
+  outline: none;
+}
+
+.floating-whatsapp-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.42);
+  font-size: 1rem;
+}
+
+.floating-whatsapp-text {
+  display: inline-flex;
+}
+
+@media (max-width: 420px) {
+  .floating-whatsapp {
+    right: 12px;
+    bottom: 12px;
+    min-height: 54px;
+    padding: 14px 16px;
+  }
+
+  .floating-whatsapp-text {
+    display: none;
+  }
+
+  .floating-whatsapp-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 640px) {
+  .vehicle-shell {
+    gap: 22px;
+  }
+
+  .vehicle-hero {
+    min-height: 720px;
+    padding: 44px;
+  }
+
+  .vehicle-feature-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-card .button-row,
+  .vehicle-hero .button-row {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 960px) {
+  .vehicle-page {
+    align-items: flex-start;
+  }
+
+  .vehicle-shell {
+    padding: 24px 0;
+  }
+
+  .vehicle-hero {
+    min-height: 760px;
+    align-items: center;
+  }
+
+  .vehicle-hero-content {
+    max-width: 760px;
+  }
+
+  .contact-card .button-row,
+  .vehicle-hero .button-row {
+    justify-content: flex-start;
+  }
+}
