@@ -19,7 +19,7 @@ singlepages/
 ├── README.md
 ├── index.html
 ├── pages/
-│   └── albano-fusca-1957/
+│   └── albano-fusca-1975/
 │       ├── index.html
 │       └── assets/
 │           ├── css/
@@ -40,7 +40,7 @@ Cada cliente, campanha ou página específica deverá ficar dentro da pasta `pag
 Exemplo:
 
 ```text
-pages/albano-fusca-1957/
+pages/albano-fusca-1975/
 ```
 
 Dessa forma, o projeto continua sendo único e genérico, mas cada página permanece isolada e organizada.
@@ -53,11 +53,11 @@ O objetivo da página é divulgar um veículo à venda por meio de uma URL públ
 
 Esse QR Code poderá ser colocado no próprio veículo, em cartazes, panfletos ou outros materiais de divulgação. Ao escanear o código, o interessado será direcionado para a página estática com as principais informações do carro e o contato para negociação.
 
-### Página: Fusca 1957
+### Página: Fusca 1975
 
 A página inicial do cliente Albano será um anúncio digital para o seguinte veículo:
 
-**Fusca ano 1957 motor 1300**
+**Fusca ano 1975 motor 1300**
 
 Informações do anúncio:
 
@@ -78,7 +78,7 @@ Após a publicação, cada página poderá ser acessada por uma URL pública bas
 Exemplo de URL esperada:
 
 ```text
-https://usuario-ou-organizacao.github.io/singlepages/pages/albano-fusca-1957/
+https://usuario-ou-organizacao.github.io/singlepages/pages/albano-fusca-1975/
 ```
 
 Essa URL será utilizada para gerar o QR Code do anúncio.
